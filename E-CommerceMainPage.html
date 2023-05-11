@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Free Your Energy Now</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<body>
+<!--adds login section-->
+  <header>
+	<button onclick="document.getElementById('login').style.display='block'" style="width:auto; float: right;
+	padding-top: 16px;">Login</button>
+
+<div id="login" class="modal">
+  
+  <form class="modal-content animate" action="Login(dan).php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="unamel" required>
+
+      <label for="passw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="passwl" required>
+        
+      <!--<button type="submit">Login</button>-->
+	  <input class="button" type="submit" name="loginbutton" value="Login">
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:white">
+      <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="index.html">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+var modal = document.getElementById('login');
+
+//closes login window by clicking anywhwere
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<!--adds singup section-->
+	<button onclick="document.getElementById('signup').style.display='block'" style="width:auto; float: right;
+	padding-top: 16px;">Sign Up</button>
+
+<div id="signup" class="modal">
+  
+  <form class="modal-content animate" action="signUp(dan).php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder= "username" name="uname" required>
+
+      <label for="passw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="passw" required>
+    
+	  <input class="button" type="submit" name="signupbutton" value="Sign Up">
+    </div>
+  </form>
+</div>
+<script>
+var modal = document.getElementById('signup');
+
+//closes signup window by clicking anywhwere
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+  	<img src="images/meditation.jpg" alt="meditation" width="85" usemap="#meditation" />
+	<map name="meditation">
+   		<area href="index.html" alt="meditation" title="meditation" 
+       		  shape="circle" coords="48,45,55">
+	</map>
+   	<h2>True Energy Journey</h2>
+   	<h3>Find the Truest Center</h3>
+  </header>
+   <nav id="nav_menu">
+  	<ul>
+    	<li><a href="index.html" class="current">Home</a></li>
+    	<li><a href="products.html">Product List</a></li>
+    	<li><a href="about.html">About</a></li>
+	</ul>
+  </nav>
+  <main>
+	<section>
+		<img src="images/meditation.jpg" alt="logo">
+    	<h1><q>I've never been more centered.</q><br>-Anonymous.</h1>
+		<p>&emsp;Welcome to the official site of Free Your Energy Now. Here you'll find 
+		everything you need in order to learn more about finding your true center, chi, zen, chakra magic, your inner yoga
+		momma, and what you can do to spread the word.</p>
+		<p>&emsp;Feel free to navigate to our exciting <a href="products.html">Product page</a>, or learn more about Free Your Energy Now in our 
+		<a href="about.html">About</a> section. If this landing page is throwing you off balance, 
+		please check the <a href="index2.html">Alternate Design</a>!</a> Enjoy the site!</p>
+	</section>
+	<aside>
+		<nav id="nav_list">
+   		<ul>
+			<li><a href="products.html" class="current">Product List</a></li>
+			<li><a href="about.html">About</a></li>
+		</ul>
+		<div>
+			<div>
+			<form action="upload.php" method="post" enctype="multipart/form-data">
+			Select image to upload:
+			<input type="file" name="fileToUpload" id="fileToUpload">
+			<input type="submit" value="Upload Image" name="submit">
+			</form>
+		</div>
+		</div>
+		</nav>
+	</aside>
+  </main>
+
+  <footer>
+	<p>&copy; 2021 Jackal<br>All images are free images from <a href="https://pixabay.com/">Pixabay</a></p>
+  </footer>
+</body>
+</html>
